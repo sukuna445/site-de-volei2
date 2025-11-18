@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef3ff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 25px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 18px;
+  background: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #004ecc;
+}
+
+.content-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.hidden {
+  display: none;
+}
+
+.section-image {
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.tenis-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tenis-item {
+  width: 45%;
+  text-align: center;
+}
+
+.tenis-item img {
+  width: 100%;
+  border-radius: 8px;
+}

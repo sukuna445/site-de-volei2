@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Completo de Vôlei</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="estilo.css">
+
+  <!-- JS interno para trocar seções -->
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</head>
+
+<body>
+<div class="container">
+  <header>
+    <h1>🏐 Vôlei - Guia Completo</h1>
+
+    <nav>
+      <button onclick="showSection('historia')">História</button>
+      <button onclick="showSection('regras')">Regras</button>
+      <button onclick="showSection('posicoes')">Posições</button>
+      <button onclick="showSection('fundamentos')">Fundamentos</button>
+      <button onclick="showSection('times')">Melhores Times</button>
+      <button onclick="showSection('tenis')">Melhores Tênis</button>
+      <button onclick="showSection('bolas')">Melhores Bolas</button>
+    </nav>
+  </header>
+
+  <!-- HISTÓRIA -->
+  <section id="historia" class="content-section">
+    <h2>📜 História do Vôlei</h2>
+    <p>
+      Criado em 1895 por William G. Morgan, o voleibol cresceu e se tornou um dos
+      esportes mais praticados do mundo. O Brasil é uma das maiores potências
+      tanto no masculino quanto no feminino.
+    </p>
+  </section>
+
+  <!-- REGRAS -->
+  <section id="regras" class="content-section hidden">
+    <h2>📏 Regras Básicas</h2>
+    <p>
+      • 6 jogadores por time <br>
+      • Máximo de 3 toques <br>
+      • Sets de 25 pontos <br>
+      • Melhor de 5 sets <br>
+      • Não pode segurar a bola <br>
+      • Rotação após recuperar o saque
+    </p>
+  </section>
+
+  <!-- POSIÇÕES -->
+  <section id="posicoes" class="content-section hidden">
+    <h2>📌 Posições</h2>
+    <img class="section-image" src="https://th.bing.com/th/id/OIP.bl9NqR1wD5VFQQ0-qW2RWQHaEo?w=270&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+    <p>
+      • Levantador <br>
+      • Oposto <br>
+      • Ponteiro <br>
+      • Central <br>
+      • Líbero
+    </p>
+  </section>
+
+  <!-- FUNDAMENTOS -->
+  <section id="fundamentos" class="content-section hidden">
+    <h2>🎯 Fundamentos</h2>
+    <img class="section-image"
+      src="https://th.bing.com/th/id/R.93b7b23f55064ccdde74b25ccbe325ba?rik=oHsMdaElouAXww&riu=http%3a%2f%2fconteudo.imguol.com.br%2fc%2fesporte%2f2014%2f09%2f25%2fdani-lins-sobe-para-levantamento-durante-jogo-contra-o-canada-1411644442719_1920x1278.jpg&ehk=0texPRRj24rzlO%2fcBZH%2f3STvfX638BeH3Tz4g8GIqgA%3d&risl=&pid=ImgRaw&r=0">
+
+    <p>
+      • Saque <br>
+      • Recepção <br>
+      • Levantamento <br>
+      • Ataque <br>
+      • Bloqueio <br>
+      • Defesa
+    </p>
+  </section>
+
+  <!-- MELHORES TIMES -->
+  <section id="times" class="content-section hidden">
+    <h2>🏆 Melhores Times</h2>
+
+    <h3>Masculino</h3>
+    <p>
+      • Brasil <br>
+      • Polônia <br>
+      • Itália <br>
+      • Rússia
+    </p>
+
+    <h3>Feminino</h3>
+    <p>
+      • Brasil <br>
+      • EUA <br>
+      • China <br>
+      • Sérvia
+    </p>
+  </section>
+
+  <!-- MELHORES TÊNIS -->
+  <section id="tenis" class="content-section hidden">
+    <h2>👟 Melhores Tênis</h2>
+
+    <div class="tenis-gallery">
+      <div class="tenis-item">
+        <img src="https://th.bing.com/th/id/OIP.gIejPs6DHn2nm9Ecsh3sGwHaEK?w=382&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+        <p>Asics Gel Rocket</p>
+      </div>
+
+      <div class="tenis-item">
+        <img src="https://th.bing.com/th/id/OIP.8USPRqRaGlO7NdAcoyYWiAHaHa?w=179&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+        <p>Mizuno Wave Lightning</p>
+      </div>
+    </div>
+
+    <p>
+      Outros modelos: Asics Netburner, Adidas Stabil.
+    </p>
+  </section>
+
+  <!-- MELHORES BOLAS -->
+  <section id="bolas" class="content-section hidden">
+    <h2>🏐 Melhores Bolas</h2>
+
+    <img class="section-image"
+      src="https://tse3.mm.bing.net/th/id/OIP.Rc-cVC-Xroe86FlB4P8J7AHaHb?pid=ImgDet&w=202&h=202&c=7&dpr=1,3&o=7&rm=3">
+
+    <p>
+      • Mikasa V200W <br>
+      • Mikasa MVA200 <br>
+      • Penalty 8.0 <br>
+      • Molten V5M5000
+    </p>
+  </section>
+</div>
+
+</body>
+</html>
